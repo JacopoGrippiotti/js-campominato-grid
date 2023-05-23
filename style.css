@@ -15,18 +15,44 @@ h1{
 .container{
     width: 100%;
     background-color: blue;
-    padding: 80px;
+    display: flex;
+    height: 800px;
+    background-color: aquamarine;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+}
+
+header h1{
+    text-transform: uppercase;
+}
+
 #gridContainer{
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
-    width: 900px;
-    border: 3px white solid;
-    margin: 0 auto;
-    background-color: aquamarine; 
+    height: 700px;
+    width: 700px;
+    border: 1px black solid;
+    margin: auto; 
 }
 
 div.gridItem{
     width: calc(100% / 10);
+    height: calc(100% / 10);
+    margin: auto;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* UTILITIES*/
+
+.flex{
+    display: flex;
 }
