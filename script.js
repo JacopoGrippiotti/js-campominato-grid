@@ -26,6 +26,8 @@ button.addEventListener('click', function(){
         gridItem.addEventListener('click' , function (){
     
             gridItem.classList.toggle('aqua')
+
+            console.log(i)
         })
         
         gridContainer.appendChild(gridItem)
