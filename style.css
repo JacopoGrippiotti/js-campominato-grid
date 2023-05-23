@@ -25,6 +25,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 110px;
+    padding: 0px 5px;
 }
 
 header h1{
@@ -51,6 +52,22 @@ div.gridItem{
     font-size: 1.2rem;
 }
 
+#button{
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: lightgray;
+    width: 90px;
+    border: 1px black solid;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+#button:active{
+    background-color: gray
+}
 /* UTILITIES*/
 
 .flex{
