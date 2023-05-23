@@ -1,7 +1,6 @@
-const gridContainer = document.getElementById('gridContainer')
+const button = document.getElementById('buttonPlay')
 
-
-
+button.append('play')
 
 function createDivElement(tagname,classname,content) {
 
@@ -14,11 +13,28 @@ function createDivElement(tagname,classname,content) {
     return divElement
 }
 
-for (let i = 1; i < 101; i++ ) {
+button.addEventListener('click', function(){
 
-    let gridItem = createDivElement('div', 'gridItem', i)
+    gridContainer.innerHTML = ""
 
-    gridContainer.append(gridItem)
+    for (let i = 1; i < 101; i++ ) {
+
+        const gridContainer = document.getElementById('gridContainer')
+
+        let gridItem = createDivElement('div', 'gridItem', i)
+    
+        gridItem.addEventListener('click' , function (){
+    
+            gridItem.classList.toggle('aqua')
+        })
+        
+        gridContainer.appendChild(gridItem)
+    
+    }
+})
 
 
-}
+
+
+
+

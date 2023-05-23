@@ -50,9 +50,10 @@ div.gridItem{
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
-#button{
+#buttonPlay{
     text-align: center;
     padding: 7px;
     border-radius: 5px;
@@ -61,11 +62,15 @@ div.gridItem{
     border: 1px black solid;
 }
 
-#button:hover{
+#buttonPlay:hover{
     cursor: pointer;
 }
 
-#button:active{
+.aqua{
+    background-color: aqua;
+}
+
+#buttonPlay:active{
     background-color: gray
 }
 /* UTILITIES*/
