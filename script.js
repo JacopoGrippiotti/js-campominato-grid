@@ -15,11 +15,11 @@ function createDivElement(tagname,classname,content) {
 
 button.addEventListener('click', function(){
 
+    const gridContainer = document.getElementById('gridContainer')
+    
     gridContainer.innerHTML = ""
 
     for (let i = 1; i < 101; i++ ) {
-
-        const gridContainer = document.getElementById('gridContainer')
 
         gridContainer.classList.add('gridBorder')
         
