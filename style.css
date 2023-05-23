@@ -37,8 +37,11 @@ header h1{
     flex-wrap: wrap;
     height: 700px;
     width: 700px;
-    border: 1px black solid;
     margin: auto; 
+}
+
+.gridBorder{
+    border: 1px solid black;
 }
 
 div.gridItem{

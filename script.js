@@ -21,6 +21,8 @@ button.addEventListener('click', function(){
 
         const gridContainer = document.getElementById('gridContainer')
 
+        gridContainer.classList.add('gridBorder')
+        
         let gridItem = createDivElement('div', 'gridItem', i)
     
         gridItem.addEventListener('click' , function (){
